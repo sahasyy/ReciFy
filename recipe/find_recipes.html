@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay muted loop id="heroVid">
+            <source src="./hero.mp4" preload="true" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="header">
+                <nav id="dash">
+                    <li id="1">Previous Recipes</li>
+                    <li id="2">Home</li>
+                    <li id="3" class="active">Find Recipes</li>
+                </nav>
+            </div>
+        </div>
+        <div id="search-container">
+            <h2>Search for Recipes</h2>
+            <input type="text" id="search-input" placeholder="Enter a recipe name or ingredient">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+
+    <script src="find_recipes.js"></script>
+</body>
+</html>

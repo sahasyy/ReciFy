@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#dash{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.container{
+    position: relative;
+
+    padding: 2% 2%;
+}
+nav{
+    padding: 10px 20px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 9px;
+    
+}
+.footer{
+    position: relative;
+}
+#home{
+    display: default;
+}
+#heroVid{
+    display: default;
+}
+nav li {
+    font-size: 25px;
+    color: #ff9500;
+    border: none;
+    background-color: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+nav li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#4fc3dc;
+    position: absolute;
+    bottom: -6px;
+    left:0;
+    transition: 0.7s;
+}
+nav li:hover::after{
+    width:100%;
+    filter:hue-rotate(180deg)
+}
+.active{
+    transform: translateY(-10px);
+    font-size: 35px;
+    box-shadow: 0 2px 0 0 #dc684f;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    position: relative;
+    padding: 10px 50px;
+    margin-top: 10%;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+}
+#heroVid{
+    object-fit:cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+.hero h2{
+    color:  rgb(255, 0, 0);
+}
+.hero h3{
+    display: inline-block;
+    color: rgb(255, 216, 74);
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 132, 0); 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: 
+      typing 3.5s steps(55, end),
+      blink-caret .75s step-end infinite;
+    margin-bottom: 0.5%;
+}
+div footer{
+    margin-top: 24%;
+    text-align: center;
+    padding: 5px;
+    background-color: DarkSalmon;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  #video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#heroVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; 
+}
